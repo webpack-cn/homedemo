@@ -28,6 +28,14 @@ module.exports = {
         include: APP_PATH
       },
       {
+        test: /\.jsx?$/,
+        loader: 'babel',
+        include: APP_PATH,
+        query: {
+          presets: ['es2015']
+        }
+      },
+      {
         test: /\.(png|jpg)$/,
         loader: 'url?limit=40000'
       }
