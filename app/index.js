@@ -1,4 +1,4 @@
-var css =  require('./main.css');
+var css =  require('./scss/main.scss');
 
 var sub = require('./sub');
 var app  = document.createElement('div');
