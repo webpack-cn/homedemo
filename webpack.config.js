@@ -12,13 +12,8 @@ module.exports = {
   //输出的文件名 合并以后的js会命名为bundle.js
   output: {
     path: BUILD_PATH,
-    filename: 'bundle.js'
-  },
-  devServer: {
-    historyApiFallback: true,
-    hot: true,
-    inline: true,
-    progress: true,
+   filename: "output.[hash].bundle.js",
+   chunkFilename: "[id].[hash].bundle.js"
   },
   module: {
     loaders: [
